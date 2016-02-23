@@ -1,5 +1,12 @@
 package banking.primitive.core;
 
+/*
+File: AccountServerFactory.java	
+Author:	K Gary
+Date:	2/22/16
+
+Description: creates singleton and returns ServerSolution
+*/
 
 public class AccountServerFactory {
 
