@@ -1,11 +1,14 @@
 package banking.primitive.core;
 
-/**
-Class:	AccountServerFactory.java
+/*
+	File: AccountServerFactory.java	
+	Author:	K Gary
+	Date:	2/22/15
 
-Description: singleton file returns new ServerSolution object
+	Class:	AccountServerFactory.java
+
+	Description: singleton file returns new ServerSolution object
 */
-
 public class AccountServerFactory {
 
 	protected static AccountServerFactory singleton = null;
