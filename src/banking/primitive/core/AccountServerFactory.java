@@ -1,6 +1,11 @@
 package banking.primitive.core;
 
+/** 
 
+ *  @author K. Gary
+	Returns new ServerSolution
+	@return serverSolution
+*/
 public class AccountServerFactory {
 
 	protected static AccountServerFactory singleton = null;
