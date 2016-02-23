@@ -1,6 +1,10 @@
-/**
- * File Banner
- */
+/*
+  File:	Account.java
+  Author: Kevin Gary
+  Date:	February 22, 2016
+  
+  Description: Provides the interface for the Account Class
+*/
 
 package banking.primitive.core;
 
