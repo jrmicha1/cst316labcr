@@ -1,10 +1,11 @@
 package banking.primitive.core;
 
-/** 
+/*
+	File: AccountServerFactory.java	
+	Author:	K Gary
+	Date:	2/22/15
 
- *  @author K. Gary
-	Returns new ServerSolution
-	@return serverSolution
+	Description: create and returns ServerSolution object
 */
 public class AccountServerFactory {
 
