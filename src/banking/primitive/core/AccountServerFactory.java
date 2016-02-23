@@ -5,7 +5,9 @@ package banking.primitive.core;
 	Author:	K Gary
 	Date:	2/22/15
 
-	Description: create and returns ServerSolution object
+	Class:	AccountServerFactory.java
+
+	Description: singleton file returns new ServerSolution object
 */
 public class AccountServerFactory {
 

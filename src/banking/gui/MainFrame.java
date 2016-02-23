@@ -13,19 +13,19 @@ import javax.swing.*;
 
 @SuppressWarnings("serial")
 class MainFrame extends JFrame {
-	AccountServer	myServer;
-	Properties		props;
-	JLabel			typeLabel;
-	JLabel			nameLabel;
-	JLabel			balanceLabel;
-	JComboBox		typeOptions;
-	JTextField		nameField;
-	JTextField		balanceField;
-	JButton 		depositButton;
-	JButton 		withdrawButton;
-	JButton			newAccountButton;
-	JButton			displayAccountsButton;
-	JButton			displayODAccountsButton;
+	AccountServer myServer;
+	Properties props;
+	JLabel typeLabel;
+	JLabel nameLabel;
+	JLabel balanceLabel;
+	JComboBox typeOptions;
+	JTextField nameField;
+	JTextField balanceField;
+	JButton depositButton;
+	JButton withdrawButton;
+	JButton	newAccountButton;
+	JButton	displayAccountsButton;
+	JButton	displayODAccountsButton;
 
 	public MainFrame(String propertyFile) throws IOException {
 
@@ -49,9 +49,9 @@ class MainFrame extends JFrame {
 	
 	private void constructForm() {
 		//*** Make these read from properties
-		typeLabel		= new JLabel(props.getProperty("TypeLabel"));
-		nameLabel		= new JLabel(props.getProperty("NameLabel"));
-		balanceLabel	= new JLabel(props.getProperty("BalanceLabel"));
+		typeLabel = new JLabel(props.getProperty("TypeLabel"));
+		nameLabel = new JLabel(props.getProperty("NameLabel"));
+		balanceLabel = new JLabel(props.getProperty("BalanceLabel"));
 
 		Object[] accountTypes = {"Savings", "Checking"};
 		typeOptions = new JComboBox(accountTypes);
@@ -166,7 +166,7 @@ class MainFrame extends JFrame {
 			}		
 		}
 	}
-	// Complete a handler for deposit button
+	// Complete a handler for withdrawal button
 	class WithdrawHandler implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			String name = nameField.getText();
@@ -180,8 +180,6 @@ class MainFrame extends JFrame {
 		}
 	}
 	
-	//** Complete a handler for the Frame that terminates 
-	//** (System.exit(1)) on windowClosing event
 
 	static class FrameHandler extends WindowAdapter {
 		public void windowClosing(WindowEvent e) {
